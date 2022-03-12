@@ -17,6 +17,7 @@ public class Main {
             osztNegy = true;
         }
 
+
         if (osztNegy) {
             System.out.println("A megadott évszám szökőév!");
         }   else {
