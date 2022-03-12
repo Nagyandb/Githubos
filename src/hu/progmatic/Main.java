@@ -19,14 +19,17 @@ public class Main {
 
         }
 
-        if (ev >= 1582 && ev % 100 == 0 && ev % 400 == 0 && ev % 4 == 0) {
+        if (osztNegy && ev % 100 == 0 && ev % 400 == 0) {
             kerekEvek = true;
         }
 
-        if (osztNegy && kerekEvek) {
-            System.out.println("A megadott évszám szökőév!");
-        }   else {
-            System.out.println("Nem szökőév!");
+
+        if (osztNegy && ev % 100 == 0) {
+            System.out.println(kerekEvek?"Szökőév!":"Nem szökőév!");
+        }   else if (osztNegy && kerekEvek) {
+            System.out.println("Szökőév!");
+        }   else if (osztNegy && !(ev % 100 == 0)) {
+            System.out.println("Szökőév!");
         }
 
     }
