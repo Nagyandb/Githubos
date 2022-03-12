@@ -6,13 +6,21 @@ public class feladat_4 {
 
     public static void main(String[] args) {
 
+        int a;
+        int b;
+        int i;
+        int lKO = 0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Kérem az első számot!");
-        int firstNumber = sc.nextInt();
-        System.out.println("Kérem a második számot!");
-        int secondNumber = sc.nextInt();
-        sc.nextLine();
+        System.out.println("Add meg az első számot!");
+        a = sc.nextInt();
+        System.out.println("Add meg a második számot!");
+        b = sc.nextInt();
 
-        boolean firstPlace = firstNumber > secondNumber;
+        for(i = 1; i <= a || i <= b; i++) {
+            if( a%i == 0 && b%i == 0 )
+                lKO = i;
+        }
+        System.out.println("A legnagyobb közös osztó: " + lKO);
+
     }
 }
