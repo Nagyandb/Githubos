@@ -11,17 +11,8 @@ public class Main {
         int ev = scanner.nextInt();
         scanner.nextLine();
 
-        boolean osztNegy = false;
-        boolean kerekEvek = false;
-
-        if (ev >= 1582 && ev % 4 == 0) {
-            osztNegy = true;
-
-        }
-
-        if (osztNegy && ev % 100 == 0 && ev % 400 == 0) {
-            kerekEvek = true;
-        }
+        boolean osztNegy = ev >= 1582 && ev % 4 == 0;
+        boolean kerekEvek = osztNegy && ev % 100 == 0 && ev % 400 == 0;
 
 
         if (osztNegy && ev % 100 == 0) {
