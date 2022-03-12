@@ -11,15 +11,14 @@ public class feladat_2 {
         int number = sc.nextInt();
         sc.nextLine();
 
-        boolean nagyobbMintNulla = number > 0;
+
         int index = 1;
         int osztok = 0;
 
-        while (index <= number && nagyobbMintNulla) {
-            if (number % index == 0) {
+
+        for(index = 1; index <= number; index++) {
+            if( number%index == 0 )
                 osztok++;
-            }
-            index++;
         }
 
         System.out.println("Osztók száma: " + osztok);
