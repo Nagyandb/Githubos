@@ -16,9 +16,10 @@ public class Main {
 
         if (ev >= 1582 && ev % 4 == 0) {
             osztNegy = true;
+
         }
 
-        if (ev % 100 == 0 && ev % 400 == 0) {
+        if (ev >= 1582 && ev % 100 == 0 && ev % 400 == 0 && ev % 4 == 0) {
             kerekEvek = true;
         }
 
