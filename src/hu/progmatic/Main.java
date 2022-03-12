@@ -29,7 +29,9 @@ public class Main {
         }   else if (osztNegy && kerekEvek) {
             System.out.println("Szökőév!");
         }   else if (osztNegy && !(ev % 100 == 0)) {
-            System.out.println("Szökőev!");
+            System.out.println("Szökőév!");
+        } else {
+            System.out.println("Nem szökőév!");
         }
 
     }
