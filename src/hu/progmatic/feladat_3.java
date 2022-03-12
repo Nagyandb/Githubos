@@ -13,7 +13,7 @@ public class feladat_3 {
         sc.nextLine();
 
         boolean nagyobbMintNulla = number > 0;
-        int index = 1;
+        long index = 1;
         int osztok = 0;
 
         while (index <= number && nagyobbMintNulla) {
