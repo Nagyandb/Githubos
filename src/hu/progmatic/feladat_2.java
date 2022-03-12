@@ -15,7 +15,7 @@ public class feladat_2 {
         int index = 1;
         int osztok = 0;
 
-        while (index < number && nagyobbMintNulla) {
+        while (index <= number && nagyobbMintNulla) {
             if (number % index == 0) {
                 osztok++;
             }
