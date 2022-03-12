@@ -5,15 +5,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Első githubkodásom!");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kérek egy évet!");
         int ev = scanner.nextInt();
         scanner.nextLine();
 
-        if (ev >= 1582) {
+        boolean osztNegy = false;
 
+        if (ev >= 1582 && ev % 4 == 0) {
+            osztNegy = true;
+            }
         }
+
+
     }
 
-}
+
