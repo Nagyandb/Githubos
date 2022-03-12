@@ -15,10 +15,16 @@ public class Main {
 
         if (ev >= 1582 && ev % 4 == 0) {
             osztNegy = true;
-            }
         }
 
+        if (osztNegy) {
+            System.out.println("A megadott évszám szökőév!");
+        }   else {
+            System.out.println("Nem szökőév!");
+        }
 
     }
+
+}
 
 
