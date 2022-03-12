@@ -16,11 +16,9 @@ public class feladat_3 {
         long index = 1;
         int osztok = 0;
 
-        while (index <= number && nagyobbMintNulla) {
-            if (number % index == 0) {
+        for(index = 1; index <= number; index++) {
+            if( number%index == 0 )
                 osztok++;
-            }
-            index++;
         }
 
         System.out.println(osztok == 2 ? "Prímszám.":"Nem prímszám.");
