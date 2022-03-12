@@ -12,13 +12,17 @@ public class Main {
         scanner.nextLine();
 
         boolean osztNegy = false;
+        boolean kerekEvek = false;
 
         if (ev >= 1582 && ev % 4 == 0) {
             osztNegy = true;
         }
 
+        if (ev % 100 == 0 && ev % 400 == 0) {
+            kerekEvek = true;
+        }
 
-        if (osztNegy) {
+        if (osztNegy && kerekEvek) {
             System.out.println("A megadott évszám szökőév!");
         }   else {
             System.out.println("Nem szökőév!");
