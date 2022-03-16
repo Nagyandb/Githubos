@@ -35,5 +35,18 @@ public class Attila {
             System.out.println("Az eredmény: " + result);
         }*/
 
+        // Minimum keresés
+        /*int[] numbers = {-104, -442, -422, -66, -333, -103, -89, -66, -501, -316, -114};
+        int minValue = Integer.MAX_VALUE, temp = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            temp = numbers[i];
+            if (temp < minValue) {
+                minValue = temp;
+            }
+        }
+
+        System.out.println(minValue);*/
+
     }
 }
