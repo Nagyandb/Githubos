@@ -22,5 +22,18 @@ public class Attila {
 
         System.out.println(result);*/
 
+        // Hatványozás
+        /*int base = 7, exponent = 5, result = 1;
+
+        for (int i = exponent; i > 0; i--) {
+            result *= base;
+        }
+
+        if (base == exponent) {
+            System.out.println("Az eredmény: 1");
+        } else {
+            System.out.println("Az eredmény: " + result);
+        }*/
+
     }
 }
